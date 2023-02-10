@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileFormat\FileFormat.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Update="..\FileFormat\FileFormat.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="FIles\sample.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
